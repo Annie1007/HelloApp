@@ -5,11 +5,13 @@ public class UC5 {
         if (args.length == 0) {
             names.append("World");
         } else {
-            for (int i = 0; i < args.length; i++) {
-                names.append(args[i]);
-                if (i < args.length - 1) {
+            boolean first = true;
+            for (String arg : args) {
+                if (!first) {
                     names.append(", ");
                 }
+                names.append(arg);
+                first = false;
             }
         }
 
