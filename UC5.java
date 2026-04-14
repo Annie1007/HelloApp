@@ -1,4 +1,4 @@
-public class HelloApp {
+public class UC5 {
     public static void main(String[] args) {
         StringBuilder names = new StringBuilder();
 
@@ -13,6 +13,6 @@ public class HelloApp {
             }
         }
 
-        System.out.println("Hello, " + names + "!");
+        System.out.println("Hello, " + names.toString() + "!");
     }
 }
